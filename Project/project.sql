@@ -329,6 +329,13 @@ UPDATE persons SET status = 'injured' WHERE name = 'Sadio Mané';
 INSERT INTO persons (name, team_id, position_id, nationality, number, birthday)
 		VALUES('Mathew Ryan', 4, 1, 5, 1, '1992-04-08'), ('Christian Walton', 4, 1, 1, 31, '1995-11-09'), ('Jason Steele', 4, 1, 1, 23, '1990-08-18'), ('Robert Sánchez', 4, 1, 3, 26, '1997-11-18'), ('Lewis Dunk', 4, 2, 1, 5, '1991-11-21'), ('Adam Webster', 4, 2, 1, 4, '1995-01-04'), ('Joël Veltman', 4, 2, 17, 34, '1992-01-15'), ('Ben White', 4, 2, 1, 3, '1997-10-08'), ('Dan Burn', 4, 2, 1, 33, '1992-05-09'), ('Bernardo', 4, 2, 13, 30, '1995-05-14'), ('Tariq Lamptey', 4, 2, 1, 2, '2000-09-30'), ('Davy Pröpper', 4, 3, 17, 24, '1991-09-02'), ('Yves Bissouma', 4, 3, 36, 8, '1996-08-30'), ('Steven Alzate', 4, 3, 22, 17, '1998-09-08'), ('Jayson Molumby', 4, 3, 18, 49, '1999-08-06'), ('Max Sanders', 4, 3, 1, 41, '1999-01-04'), ('Solly March', 4, 3, 1, 20, '1994-07-20'), ('Alexis Mac Allister', 4, 3, 20, 10, '1998-12-24'), ('Pascal Groß', 4, 3, 8, 13, '1991-06-15'), ('Adam Lallana', 4, 3, 1, 14, '1988-05-10'), ('Leandro Trossard', 4, 4, 14, 11, '1994-12-04'), ('José Izquierdo', 4, 4, 22, 19, '1992-07-07'), ('Alireza Jahanbakhsh', 4, 4, 34, 16, '1993-08-11'), ('Neal Maupay', 4, 4, 6, 9, '1996-08-14'), ('Aaron Connolly', 4, 4, 18, 7, '2000-01-28'), ('Florin Andone', 4, 4, 35, 21, '1993-04-11'), ('Andi Zeqiri', 4, 4, 31, 29, '1999-06-22');
 
+INSERT INTO injuries (start_date, end_date, player_id, description) VALUES
+	('2020-01-02', '2020-01-22', 81, 'Calf Injury'),
+	('2019-09-23', '2019-10-18', 81, 'Foot Injury'),
+	('2018-12-16', '2019-01-05', 81, 'Thigh Injury'),
+	('2018-10-28', '2018-11-10', 81, 'Knock'),
+	('2018-03-14', '2018-04-02', 81, 'Ankle Injury'),
+	('2016-08-17', '2016-08-26', 81, 'Ankle Injury');
 
 
 SELECT id, name FROM countries WHERE id > 36;
