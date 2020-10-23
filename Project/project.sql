@@ -337,5 +337,27 @@ INSERT INTO injuries (start_date, end_date, player_id, description) VALUES
 	('2018-03-14', '2018-04-02', 81, 'Ankle Injury'),
 	('2016-08-17', '2016-08-26', 81, 'Ankle Injury');
 
+INSERT INTO events (description) VALUES
+	('Starting Lineup'),
+	('Goal'),
+	('Assist'),
+	('Own goal'),
+	('Yellow Card'),
+	('Red Card'),
+	('Substitution on'),
+	('Substitution off'),
+	('On the bench'),
+	('Not in the squad');
+
+INSERT INTO events (description) VALUES
+	('Penalty scored'),
+	('Penalty missed');
+
+INSERT INTO events (description) VALUES
+	('Foul'),
+	('Free kick'),
+	('Corner');
+
+UPDATE events SET description = 'Corner kick' WHERE description = 'Corner';
 
 SELECT id, name FROM countries WHERE id > 36;
